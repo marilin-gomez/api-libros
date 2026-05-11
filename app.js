@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 3000;
 console.log(`Puerto asignado: ${PORT}`);
 
 app.use(express.json());
+app.set('json spaces', 2);
 
 const libros = [
   { id: 1, nombre: "Cien años de soledad",     anio: 1967, autor: "Gabriel García Márquez" },
